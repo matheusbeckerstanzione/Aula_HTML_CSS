@@ -1,0 +1,156 @@
+        <!DOCTYPE html>
+        <html lang="pt-BR"> <!--idioma esta em portugues-->
+
+        <head> <!--abertura do cabeçalho do site-->
+            <meta charset="UTF-8"> <!--esta interpretando os caracteres especiais como numero-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--essa teg habilita o site para ser aberto em diferentes dispositivos-->
+            <meta name="autor" content="Matheus becker">
+            <meta name="descrition" content="Site com o proposito de explicar o html">
+            <title>introdução ao HTML</title> <!--titulo do site la an barra de pesquisa-->
+            <link rel="shortcut icon" href="./testelogosamazon.png" type="image/x-icon"> <!--tag que incorpora logo na guia-->
+
+            <!-- atributo rel indica a relaçao -->
+            <link rel="stylesheet" href="style.css"> <!--linkando o css de forma externa-->
+
+            <!-- linkando de forma interna -->
+            <style>
+
+
+            </style>
+        </head> <!--fechamento do cabeçalho do site-->
+
+        <body> <!--corpo do site-->
+
+            <!-- linkando inline ou direto na tag -->
+            <h1 style="">Tela principal sobre a Amazon</h1><!--titulo principal-->
+            <!-- boas praticas chamamos somente 1 vez -->
+
+            <header id="cabecalho">
+                <img id="logo" src="./testelogosamazon.png" alt="Imagem da marca da amazon" width="250" height="250"> <!--scr caminho da imagem onde vai aparecer no logotipo e o alt e a discrição da imagem-->
+                
+                
+                <nav>
+                    <a href="https://www.youtube.com/watch?v=h_D3VFfhvs4&list=RDh_D3VFfhvs4&start_radio=1">Sobre a amazon</a> <!--redirecionar texto e fazer,referencia de hipertexto, Criamos um link para uma página da web adicionando =-->
+
+                    <a href="index.html">Tela Inicial</a><!--redirecionar texto e fazer,referencia de hipertexto, Criamos um link para uma página da web adicionando =-->
+
+                    <a href="texte.pdf" download>Saiba mais</a><!--redirecionar texto e fazer,referencia de hipertexto, Criamos um link para uma página da web adicionando =-->
+
+                </nav>
+
+
+            </header> <!-- é um elemento que define o conteúdo introdutório-->
+
+            <main>
+                <section>
+
+                    <!--CARD PRODUTOS-->
+                    <h2>Modelos Alexa</h2>
+
+                    <!--tamanho da imagem-->
+                    <div>
+                        <img src="echodot-alexa-5-geracao-preta-1.webp" alt="Alexa Echo Dot 5">
+
+                        <!--tamanho na imagem-->
+                        <h3>Alexa Echo Dot 5</h3>
+                        <samp> 480,00</samp>
+                    </div>
+
+                    <div>
+                        <img src="alexa2.webp" alt="Alexa Echo Dot 3">
+                        <h3>Alexa Echo Dot 3</h3>
+                    <samp> 260,00</samp>
+                    </div>
+
+                    <div>
+                        <img src="alexa3.png" alt="Alexa Echo Sport">
+                        <h3>Alexa Echo Sport</h3>
+                        <samp> 340,00</samp>
+                    </div>
+                </section> <!--Seção modelo alexa-->
+
+
+                <!--AREA DO SUPORTE-->
+                <section>
+                    <h2>Suporte</h2>
+                    <form>
+                        <label for="campocompleto">Digite o seu nome: </label>
+                        <input type="text"  id="campocompleto"> <!--placeholder="Digite seu nome completo"-->
+                        <br/>
+                        <label for="campo email">E-mail</label>
+                        <input type="email" name="" id="campo email">
+                        <br>
+
+                        <label for="campoSenha">Senha</label>
+                        <input type="password" name="" id="campoSenha"> 
+                        <br>
+
+                        <label for="campoUpload">Upload</label>
+                        <input type="file" name="" id="campoUpload"> 
+                        <br>
+
+                        <label for="">Estado</label>
+                         
+
+                        <select name="" id="">
+                            <option value="" selected disabled>Selecione uma opção</option> <!--selected para selecionar a opção e o disabled desativar a opção para o usuario nao selecionar-->
+                            <option value="RJ">RJ</option>
+                            <option value="MG">MG</option>
+                            <option value="SP">SP</option>
+                            <option value="SC">SC</option>
+                            <option value="RO">RO</option>
+                        </select>
+                        <br>
+
+                        <input type="checkbox" name="" id="">
+                        <label for="">Li e concordo com os termos.</label>
+                        <br>
+
+                        <label for="">Sexo</label>
+
+                        <label for="">Feminino</label>
+                        <input type="radio" name="opicao-genero" id="" value="Feminino">
+
+                        <label for="">Masculino</label>
+                        <input type="radio" name="opicao-genero" id="" value="Masculino">
+                        <br>
+
+                        <!-- Campo obrigadorio: -->
+                        <label for="">Descrição</label>
+                        <textarea name="" id="" required></textarea>
+                        <br>
+
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>    
+ 
+                    </form><!--formulario para o ususario mexer-->
+                </section>
+
+            </main> <!--main conteudo principal, e o elemento pai-->
+
+            <aside>
+                <nav>
+                    <a href="http://">Versão 1</a>
+                    <a href="http://">Versão 2</a>
+                    <a href="http://">Versão 3</a>
+                </nav>
+            </aside>
+
+            <footer>
+                <!-- nao ordenada -->
+                <ul>
+                    <li> Inicial</li>
+                    <li>Sobre nós</li>
+                    <li>Planos</li>
+                    <li>Promoção</li>
+                </ul>
+                
+                <!-- ordendada ol-->
+               
+                <p>Direitos reservados - 2025.</p>
+            </footer>
+            
+                
+
+        </body>
+        </html>
